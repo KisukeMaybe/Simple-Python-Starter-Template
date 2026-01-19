@@ -20,17 +20,29 @@ project-root/
 
 ## Setup Instructions
 
+### Use template through Github (much easier). If not, follow the steps below:
+
 ### 1. Copy project folder
 
-### 2. Delete `venv/` folder
-
-### 3. Create a virtual environment
+### 2. Delete template git history
 
 ```
-    python -m venv venv
+rm -rf .git
 ```
 
-### 4. Activate virtual environment
+### 3. Initialize new git repo
+
+```
+git init
+```
+
+### 4. Create a virtual environment
+
+```
+python -m venv venv
+```
+
+### 5. Activate virtual environment
 
 **Windows**
 
@@ -44,7 +56,7 @@ venv/Scripts/activate
 source venv/bin/activate
 ```
 
-### 5. Install dependencies
+### 6. Install dependencies
 
 ```
 pip install -r requirements.txt
